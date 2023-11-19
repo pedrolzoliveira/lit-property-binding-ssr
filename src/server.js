@@ -30,11 +30,11 @@ const myTemplate = html`
       <!-- Does not renders the name correctly. -->
       <my-list .name=${'Example 2'}></my-list>
 
-      <!-- Does not render the items correctly. -->
-      <my-list .items=${['Example 3']}></my-list>
+      <!-- Does not renders the element at all. -->
+      <my-list items=${['Example 3']}></my-list>
 
       <!-- Does not render the items correctly. -->
-      <my-list .items=${['Example 3']}></my-list>
+      <my-list .items=${['Example 4']}></my-list>
 
     </body>
   </html>
