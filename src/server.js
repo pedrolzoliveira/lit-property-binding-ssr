@@ -23,9 +23,9 @@ const myTemplate = html`
     </head>
     <body>
       <h1>The list</h1>
-      <my-list name=${'alexia'}></my-list>
+      <my-list name=${'Bruce'}></my-list>
     </body>
-      </html>
+  </html>
 `
 
 server.get('/', (req, res) => {
