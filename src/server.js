@@ -23,8 +23,19 @@ const myTemplate = html`
     </head>
     <body>
       <h1>The list</h1>
-      <!-- The custom element is not rendered -->
-      <my-list .name=${'Bruce'} .items=${['Batman', 'Car', 'Money']}></my-list>
+
+      <!-- Renders name correctly. -->
+      <my-list name=${'Example 1'}></my-list>
+
+      <!-- Does not renders the name correctly. -->
+      <my-list .name=${'Example 2'}></my-list>
+
+      <!-- Does not render the items correctly. -->
+      <my-list .items=${['Example 3']}></my-list>
+
+      <!-- Does not render the items correctly. -->
+      <my-list .items=${['Example 3']}></my-list>
+
     </body>
   </html>
 `;

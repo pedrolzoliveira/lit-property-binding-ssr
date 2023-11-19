@@ -9,8 +9,8 @@ export class MyListElement extends LitElement {
 
   constructor() {
     super();
-    this.items = [];
     this.name = 'Tony Stark';
+    this.items = ['Mark 42', 'Mark 43'];
   }
   
   render() {
