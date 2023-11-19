@@ -23,7 +23,8 @@ const myTemplate = html`
     </head>
     <body>
       <h1>The list</h1>
-      <my-list name=${'Bruce'}></my-list>
+      <!-- The custom element is not rendered -->
+      <my-list .name=${'Bruce'} .items=${['Batman', 'Car', 'Money']}></my-list>
     </body>
   </html>
 `
